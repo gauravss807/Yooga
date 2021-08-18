@@ -1,0 +1,3471 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initital-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		
+		<style>
+			*
+			{
+				box-sizing: border-box;
+			}
+			#second-navbar .navbar-nav .nav-item:hover
+			{
+				background-color: #a1a1a1;
+			}
+			#btn-join-contact
+			{
+				background-color: #333;
+				color: #F7CAC9;
+				padding: 10px 20px;
+			}
+			#btn-join-contact:hover
+			{
+				background-color: white;
+				color: #333;
+				text-decoration: none;
+				transition: 0.4s;
+			}
+			.third-div .row .col-sm-6
+			{
+				padding: 0px 0px 0px 60px;
+			}
+			.top-bar
+			{
+				background-color: #343148;
+			}
+			#second-navbar
+			{
+				background-color: #343148;
+				width: 100%;
+				opacity: 0.8;
+			}
+			.yoga-girl-another-content
+			{
+				border: 0px solid black;
+			}
+			
+			#yoga-girl-link
+			{
+				background-color: #343148;
+				color: #F7CAC9;
+				padding: 15px 25px;
+				transition: 0.5s;
+			}
+			#yoga-girl-link:hover
+			{
+				background-color: white;
+				color: #343148;
+				text-decoration: none;
+			}
+			p
+			{
+				color: #797979;
+			}
+			#fifth-content .fifth-content-under-div:hover.fifth-content-under-div 
+			{
+				background-color: #343148; 
+			}
+			#fifth-content .fifth-content-under-div:hover h5
+			{
+				color: #F7CAC9;
+			}
+			#fifth-content .fifth-content-under-div:hover p
+			{
+				color: white;
+			}
+			
+			#sixth-content #classes-schedule .inner-div:hover .class-teacher a
+			{
+				color: #F7CAC9;
+				background-color: #343148;
+			}
+			#sixth-content #classes-schedule .inner-div
+			{
+				position: relative;
+			}
+			.class-teacher
+			{
+				position: relative;
+				margin-top: -20px;
+				margin-right: auto;
+				margin-bottom: 20px;
+				margin-left: auto;
+				width: 80%;
+				box-shadow: 0 0 10px #343148;
+				background-color: white;
+				display: flex;
+				align-items: center;
+				border-radius: 40px;
+			}
+			.class-teacher img
+			{
+				background-color: #F7CAC9; 
+			}
+			.class-teacher h3
+			{
+				font-size: 15px;
+				font-weight: 600;
+				margin:0px;
+				width: calc(100% - 80px);
+				
+			}
+			.class-teacher a
+			{
+				background-color: #F7CAC9;
+				width: 40px;
+				height: 40px;
+				border-radius: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #343148;
+				font-size: 25px;
+				padding: 0 0 5px 0;
+				transition: .3s;
+			}
+			.class-teacher a:hover
+			{
+				text-decoration: none;
+				background-color: #343148;
+				color: #F7CAC9;
+			}
+			.inner-div h5 , p
+			{
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+			
+			@media only screen and (min-width:320px )
+			{
+				#ninth-content
+				{
+					padding:0px 20px;
+				}
+				#ninth-content h6
+				{
+					color: #797979;
+				}
+				#ninth-content h1
+				{
+					margin-bottom: 100px;
+					font-weight: bold;
+					font-size: 30px;
+				}
+				#ninth-content .row .col-md-4
+				{
+					padding: 0px 5px;
+				}
+				.clint-image-div2
+				{
+					position: relative;
+					background-color: #343148;
+					border: 0px !important;
+					height: 100%;
+				}
+				.clint-image-div2 .clint-image2
+				{
+					position: relative;
+					border: 0px !important;
+					background-color: white;
+					margin-top: -20% !important;
+					margin-bottom: 20px;
+				}
+				.clint-image-div2 h5
+				{
+					color: #F7CAC9;
+				}
+				.clint-image-div2 p
+				{
+					width: 100%;
+					padding-left: 20px;
+					padding-right: 20px;
+					color: white;
+				}	
+			}
+			
+			@media only screen and (max-width: 358px)
+			{
+				.footer
+				{
+			
+					padding: 0px;
+					height: 450px;
+					
+				}
+				.footer-div
+				{
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 450px;
+					background-color: #343148;
+				}
+				.footer-div .footer-image
+				{
+					height: 450px;
+					opacity: 0.1;
+					width: 100%;
+				}
+				.footer-div .footer-text
+				{
+					position: absolute;
+					color: white;
+					top: 5% !important;
+					opacity: 1;
+					align-items: center !important;
+					width: 100%;
+					height: auto ;
+					
+					padding: 0px 40px;
+				}
+				.footer-div .footer-text h1
+				{
+					margin-bottom: 40px;
+				}
+				.footer-div .footer-text h1 a
+				{
+					font-size: 60px !important;
+					font-weight: bold;
+					color: #F7CAC9;
+				}
+				.footer-div .footer-text h1 a:hover
+				{
+					text-decoration: none;
+				}
+				.footer-div .footer-text h5
+				{
+					margin-bottom: 15px;
+				}
+				.footer-div .footer-text .footer-links
+				{
+					margin-bottom: 40px !important;
+				}
+				.footer-div .footer-text .footer-links a
+				{
+					color: white;
+					margin-left: 15px;
+					transition: 0.5s;
+				}
+				.footer-div .footer-text .footer-copyright-text
+				{
+					display: flex;
+					border-top: 1px solid grey;
+					padding: 30px 0px 0px 0px;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-4
+				{
+					padding: 0px !important;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p
+				{
+					color: white;
+					margin: 0px;
+					text-align: center; 
+					width: 100%;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a
+				{
+					color: white;
+					transition: 0.5s;
+					font-weight: bold;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a:hover
+				{
+					text-decoration: none;
+					color: #F7CAC9 !important;
+				}
+				.footer-div .footer-text .footer-links a:hover
+				{
+					color: #F7CAC9;
+				}
+			}
+			
+			@media only screen and (max-width: 575px)
+			{
+				#third-content
+				{
+					background-color: #F7CAC9;
+				}
+				#yoga-girl-content-col1
+				{
+					padding: 90px 15px;
+				}
+				#yoga-girl-content-col1 .yoga-girl-first-parg
+				{
+					font-size: 25px;
+					margin-bottom: 20px;
+					width: 100%;
+				}
+				#yoga-girl-content-col1 .yoga-girl-another-content
+				{
+					line-height: 20px;
+					margin-left: 0px;
+					width: 100%;
+					margin-bottom: 40px;
+					text-align: justify;
+				}
+				#yoga-girl-content-col1 #yoga-girl-link
+				{
+					padding: 5px 10px;
+				}
+				#fourth-content .fourth-content-col1
+				{
+					padding: 90px 15px 15px 15px;
+				}
+				#fourth-content .fourth-content-col1 .about-yoga-image
+				{
+					width: 100%;
+				}
+				#fourth-content .fourth-content-col2
+				{
+					padding: 15px 15px 90px 15px;
+				}
+				#fourth-content .fourth-content-col2 h6
+				{
+					font-size: 16px;
+				}
+				#fourth-content .fourth-content-col2 .wel-yooga
+				{
+					font-size: 30px;
+					margin-bottom: 30px;
+				}
+				#fourth-content .fourth-content-col2 .fourth-content-first-par
+				{
+					text-align: justify;
+					margin-left: 0px;
+					width: 100%;
+				}
+				#fourth-content .fourth-content-col2 .fourth-content-second-par
+				{
+					margin-bottom: 40px;
+					text-align: justify;
+					margin-left: 0px;
+					width: 100%;
+				}
+				#fourth-content .fourth-content-col2 #yoga-girl-link
+				{
+					padding: 10px 20px;
+				}
+				
+				#fifth-content #fifth-content-heading
+				{
+					font-size: 30px;
+					font-weight: bold;
+				}
+				#fifth-content #fifth-content-row
+				{
+					padding: 30px 5px;
+				}
+				#fifth-content .fifth-content-under-div
+				{
+					padding: 20px 30px;
+				}
+				
+				#sixth-content
+				{
+					padding: 60px 20px;
+				}
+				#sixth-content h1
+				{
+					font-size: 30px;
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				#sixth-content #classes-schedule
+				{
+					padding: 20px;
+				}
+				#sixth-content .sixth-content-classes-link .page-link
+				{
+					border: 1px solid #343148;
+					display: inline-block;
+					color: #797979;
+					margin: 3px;
+				}
+				#sixth-content .sixth-content-classes-link .page-link:visited
+				{
+					color: #F7CAC9;
+					background-color: #343148; 
+				}
+				#sixth-content .sixth-content-classes-link .page-link:hover
+				{
+					color: #F7CAC9;
+					background-color: #343148; 
+				}
+				#sixth-content .row .col-md-6
+				{
+				}
+				#sixth-content #classes-schedule
+				{
+					padding: 20px 0px;
+				}
+				#sixth-content #classes-schedule .inner-div
+				{
+					width: auto;
+					text-align: left;
+					margin-bottom: 10px;
+				}
+				.class-teacher
+				{
+					position: relative;
+					margin-top: -20px;
+					margin-right: auto;
+					margin-bottom: 20px;
+					margin-left: auto;
+					width: 80%;
+					box-shadow: 0 0 5px #343148;
+					background-color: white;
+					display: flex;
+					align-items: center;
+					border-radius: 40px;
+				}
+				.class-teacher img
+				{
+					background-color: #F7CAC9; 
+				}
+				.class-teacher h3
+				{
+					font-size: 17px;
+					font-weight: 600;
+					margin:0px;
+					width: calc(100% - 60px);
+					text-align: center;
+				}
+				.class-teacher a
+				{
+					background-color: #F7CAC9;
+					width: 40px;
+					height: 40px;
+					border-radius: 40px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: #343148;
+					font-size: 25px;
+					padding: 0 0 5px 0;
+					transition: .3s;
+				}
+				.class-teacher a:hover
+				{
+					text-decoration: none;
+					background-color: #343148;
+					color: #F7CAC9;
+				}
+				.inner-div h5 
+				{
+					margin-left: auto;
+					margin-right: auto;
+					width: 80%;
+					text-align: left;
+				}
+				.inner-div p
+				{
+					margin-left: auto;
+					margin-right: auto;
+					width: 80%;
+					text-align: left;
+					font-size: 14px;
+				}
+				
+				#seventh-content
+				{
+					padding: 0px;
+				}
+				#seventh-content .back-image 
+				{
+					background-color: #F7CAC9;
+					padding: 90px 0px;
+				}	
+				#seventh-content .back-iamge .back-image-content
+				{
+				}
+				#seventh-content .back-image .back-image-content h6
+				{
+					font-size: 15px;
+					font-weight: bold;
+				}
+				#seventh-content .back-image .back-image-content h1
+				{
+					font-size: 30px;
+					font-weight: bold;
+					margin-bottom: 20px;
+					padding: 0px 30px 0px 30px;
+				}
+				
+				#seventh-content .back-image .back-image-content #span
+				{
+					color: red;
+					font-size: 50px;
+				}
+				#seventh-content .back-image .back-image-content p
+				{
+					font-size: 15px;
+					line-height: 20px;
+					padding: 0px 30px 30px 30px;
+					width: auto;
+				}
+				#seventh-content .back-image #yoga-girl-link:hover
+				{
+					background-color: white;
+					color: #343148;
+					text-decoration: none;
+				}
+				
+				#eighth-content
+				{
+					padding: 90px 13px 70px 13px !important;
+				}
+				#eighth-content h6
+				{
+					color: #797979;
+				}
+				#eighth-content h1
+				{
+					font-size: 30px;
+					margin-bottom: 40px;
+				}
+				#eighth-content .row .col-md-4 .card
+				{
+					margin-bottom: 30px;
+				}
+				#eighth-content .row .col-md-4 .card .card-header #card-header-span
+				{
+					font-weight: bold;
+					font-size: 40px;
+					color: #343148;
+				}
+				#eighth-content .row .col-md-4 .card .card-header
+				{
+					background-color: #F7CAC9;
+					padding-top: 30px;
+					margin-bottom: 20px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer
+				{
+					background-color: white; 
+					border: none;
+					padding: 30px 0px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link
+				{
+					background-color: #F7CAC9;
+					color: #343148;
+					padding: 10px 20px;
+					margin-bottom: 10px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link:hover
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					text-decoration: none;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer .popularlink:hover
+				{
+					background-color: #F7CAC9 !important;
+					color: #343148 !important;
+					text-decoration: none !important;
+				}
+				#popular
+				{
+				display: none;
+				}
+				
+				#ninth-content
+				{
+					padding:0px 25px;
+				}
+				#ninth-content h6
+				{
+					color: #797979;
+				}
+				#ninth-content h1
+				{
+					margin-bottom: 100px;
+					font-weight: bold;
+					font-size: 30px;
+				}
+				#ninth-content .row .col-md-4
+				{
+					padding: 0px 5px;
+				}
+				.clint-image-div2
+				{
+					position: relative;
+					background-color: #343148;
+					border: 0px !important;
+					height: 100%;
+				}
+				.clint-image-div2 .clint-image2
+				{
+					position: relative;
+					border: 0px !important;
+					background-color: white;
+					margin-top: -12%;
+					margin-bottom: 20px;
+				}
+				.clint-image-div2 h5
+				{
+					color: #F7CAC9;
+				}
+				.clint-image-div2 p
+				{
+					width: 100%;
+					padding-left: 20px;
+					padding-right: 20px;
+					color: white;
+				}
+				
+				#tenth-content
+				{
+					padding: 90px 13px;
+				}
+					#tenth-content h6
+				{
+					color: #797979;
+				}
+				#tenth-content h1
+				{
+					margin-bottom: 50px;
+					font-size: 30px;
+					font-weight: bold;
+				}
+				#tenth-content .row .col-lg-3
+				{
+				
+					padding: 0px 15px;
+					
+				}
+				#tenth-content .trainer-div
+				{
+					padding: 15px;
+					margin-bottom: 30px;
+				}
+				#tenth-content .trainer-div .trainer-div-image
+				{
+					position: relative;
+					margin-bottom: 20px;
+				}
+				.trainer
+				{
+					opacity: 1;
+					tranisition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					transition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div:hover .trainer
+				{
+					opacity: 0.5;
+				}
+				#tenth-content .trainer-div:hover .image-links
+				{
+					opacity: 1;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links a
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					padding: 6px 10px;
+					margin-left: auto;
+					margin-right: auto;
+					border-radius: 40px;
+				}
+				
+				#eleventh-content
+				{
+					padding: 0px 13px 90px 13px;
+				}
+				#eleventh-content h6
+				{
+					color: #797979;
+				}
+				#eleventh-content h1
+				{
+					font-weight: bold;
+					margin-bottom: 40px;
+					font-size: 30px;
+				}
+				#eleventh-content .row .col-lg-4
+				{
+				
+					padding: 0px 15px;
+				}
+				.blog-div
+				{
+					text-align: left;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div div p
+				{
+					font-size: 13px;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link
+				{
+					color: #343148;
+					text-decoration: none;
+					font-weight: bold;
+					display: flex;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link:hover 
+				{
+					color: #F7CAC9;
+					transition: 0.3s ease;
+					text-decoration: none;
+				}
+				
+				.footer
+				{
+			
+					padding: 0px;
+					height: 450px;
+					
+				}
+				.footer-div
+				{
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 450px;
+					background-color: #343148;
+				}
+				.footer-div .footer-image
+				{
+					height: 450px;
+					opacity: 0.1;
+					
+				}
+				.footer-div .footer-text
+				{
+					position: absolute;
+					color: white;
+					top: 12%;
+					opacity: 1;
+					align-items: center !important;
+					width: 100%;
+					height: auto ;
+					
+					padding: 0px 40px;
+				}
+				.footer-div .footer-text h1
+				{
+					margin-bottom: 40px;
+				}
+				.footer-div .footer-text h1 a
+				{
+					font-size: 60px !important;
+					font-weight: bold;
+					color: #F7CAC9;
+				}
+				.footer-div .footer-text h1 a:hover
+				{
+					text-decoration: none;
+				}
+				.footer-div .footer-text h5
+				{
+					margin-bottom: 15px;
+				}
+				.footer-div .footer-text .footer-links
+				{
+					margin-bottom: 60px;
+				}
+				.footer-div .footer-text .footer-links a
+				{
+					color: white;
+					margin-left: 15px;
+					transition: 0.5s;
+				}
+				.footer-div .footer-text .footer-copyright-text
+				{
+					display: flex;
+					border-top: 1px solid grey;
+					padding: 30px 0px 0px 0px;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-4
+				{
+					padding: 0px !important;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p
+				{
+					color: white;
+					
+					margin: 0px;
+					text-align: center; 
+					width: 100%;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a
+				{
+					color: white;
+					transition: 0.5s;
+					font-weight: bold;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a:hover
+				{
+					text-decoration: none;
+					color: #F7CAC9 !important;
+				}
+				.footer-div .footer-text .footer-links a:hover
+				{
+					color: #F7CAC9;
+				}
+			}
+			
+			@media only screen and (min-width: 576px)
+			{
+				#third-content
+				{
+					background-color: #F7CAC9;
+				}
+				#yoga-girl-content-col1
+				{
+					padding: 90px 15px;
+				}
+				#yoga-girl-content-col1 .yoga-girl-first-parg
+				{
+					font-size: 30px;
+					margin-bottom: 20px;
+					width: 100%;
+				}
+				#yoga-girl-content-col1 .yoga-girl-another-content
+				{
+					margin-bottom: 30px;
+					line-height: 20px;
+					margin-left: 0px;
+					width: 100%;
+				}
+				#yoga-girl-content-col1 #yoga-girl-link
+				{
+					padding: 10px 15px;
+				}
+				
+				#fourth-content
+				{
+					padding: 0px 0px 90px 0px;
+				}
+				#fourth-content .fourth-content-col1
+				{
+					padding-top: 90px;
+					padding-bottom: 15px;
+					width: 100%;
+					text-align: center;
+				}
+				#fourth-content .fourth-content-col1 .about-yoga-image
+				{
+					width: 80%;
+					height: auto;
+				}
+				#fourth-content .fourth-content-col2
+				{
+					width: 80%;
+					margin: auto;
+				}
+				#fourth-content .wel-yooga
+				{
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				#fourth-content .fourth-content-first-par
+				{
+					width: 100%;
+				}
+				#fourth-content .fourth-content-second-par
+				{
+					margin-bottom: 40px;
+					width: 100%;
+				}
+				#fourth-content .fourth-content-col2 #yoga-girl-link
+				{
+					padding: 15px 20px;
+				}
+				
+				#fifth-content #fifth-content-row
+				{
+					padding: 30px 20px;
+				}
+				#fifth-content .fifth-content-under-div
+				{
+					padding: 20px 30px;
+					margin: auto;
+					width: 70%
+				}
+				#fifth-content .fifth-content-under-div h5
+				{
+					margin-bottom: 20px;
+				}
+				#sixth-content
+				{
+					padding: 60px 20px;
+				}
+				#sixth-content h1
+				{
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				#sixth-content #classes-schedule
+				{
+					padding: 20px;
+				}
+				#sixth-content .sixth-content-classes-link .page-link
+				{
+					border: 1px solid #343148;
+					display: inline-block;
+					color: #797979;
+					margin: 3px;
+				}
+				#sixth-content .sixth-content-classes-link .page-link:visited
+				{
+					color: #F7CAC9;
+					background-color: #343148; 
+				}
+				#sixth-content .sixth-content-classes-link .page-link:hover
+				{
+					color: #F7CAC9;
+					background-color: #343148; 
+				}
+				#sixth-content .row .col-md-6
+				{
+					padding: 5px!important;
+				}
+				#sixth-content #classes-schedule
+				{
+					padding: 20px 20px;
+				}
+				#sixth-content #classes-schedule .inner-div
+				{
+					width: 70%;
+					text-align: left;
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 10px;
+				}
+				.class-teacher
+				{
+					position: relative;
+					margin-top: -20px;
+					margin-right: auto;
+					margin-bottom: 20px;
+					margin-left: auto;
+					width: 80%;
+					box-shadow: 0 0 10px #343148;
+					background-color: white;
+					display: flex;
+					align-items: center;
+					border-radius: 40px;
+				}
+				.class-teacher img
+				{
+					background-color: #F7CAC9; 
+				}
+				.class-teacher h3
+				{
+					font-size: 17px;
+					font-weight: 600;
+					margin:0px;
+					width: calc(100% - 60px);
+					text-align: center;
+				}
+				.class-teacher a
+				{
+					background-color: #F7CAC9;
+					width: 40px;
+					height: 40px;
+					border-radius: 40px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: #343148;
+					font-size: 25px;
+					padding: 0 0 5px 0;
+					transition: .3s;
+				}
+				.class-teacher a:hover
+				{
+					text-decoration: none;
+					background-color: #343148;
+					color: #F7CAC9;
+				}
+				.inner-div h5 
+				{
+					margin-left: auto;
+					margin-right: auto;
+					width: 80%;
+					text-align: left;
+				}
+				.inner-div p
+				{
+					margin-left: auto;
+					margin-right: auto;
+					width: 80%;
+					text-align: left;
+					font-size: 14px;
+				}
+				
+				#seventh-content
+				{
+					padding: 0px;
+				}
+				#seventh-content .back-image 
+				{
+					background-color: #F7CAC9;
+					padding: 90px 0px;
+				}	
+				#seventh-content .back-iamge .back-image-content
+				{
+				}
+				#seventh-content .back-image .back-image-content h6
+				{
+					font-size: 15px;
+					font-weight: bold;
+				}
+				#seventh-content .back-image .back-image-content h1
+				{
+					font-size: 30px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+				
+				#seventh-content .back-image .back-image-content #span
+				{
+					color: red;
+					font-size: 50px;
+				}
+				#seventh-content .back-image .back-image-content p
+				{
+					font-size: 15px;
+					line-height: 20px;
+					padding: 0px 30px 30px 30px;
+					width: auto;
+				}
+				#seventh-content .back-image #yoga-girl-link:hover
+				{
+					background-color: white;
+					color: #343148;
+					text-decoration: none;
+				}
+				
+				#eighth-content
+				{
+					padding: 90px 10px 70px 10px !important;
+				}
+				#eighth-content h6
+				{
+					color: #797979;
+				}
+				#eighth-content h1
+				{
+					font-size: 30px;
+					margin-bottom: 40px;
+				}
+				#eighth-content .row .col-md-4 .card
+				{
+					margin-bottom: 30px;
+				}
+				#eighth-content .row .col-md-4 .card .card-header #card-header-span
+				{
+					font-weight: bold;
+					font-size: 40px;
+					color: #343148;
+				}
+				#eighth-content .row .col-md-4 .card .card-header
+				{
+					background-color: #F7CAC9;
+					padding-top: 30px;
+					margin-bottom: 20px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer
+				{
+					background-color: white; 
+					border: none;
+					padding: 30px 0px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link
+				{
+					background-color: #F7CAC9;
+					color: #343148;
+					padding: 10px 20px;
+					margin-bottom: 10px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link:hover
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					text-decoration: none;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer .popularlink:hover
+				{
+					background-color: #F7CAC9 !important;
+					color: #343148 !important;
+					text-decoration: none !important;
+				}
+				#popular
+				{
+					position: absolute;
+					margin-top: -30px;
+					background-color: #F7CAC9;
+					color: #343148;
+					padding: 3px 10px;
+					margin-left: 35.7%;
+				}
+				
+				#ninth-content
+				{
+					padding:0px 25px;
+				}
+				#ninth-content h6
+				{
+					color: #797979;
+				}
+				#ninth-content h1
+				{
+					margin-bottom: 100px;
+					font-weight: bold;
+					font-size: 30px;
+				}
+				#ninth-content .row .col-md-4
+				{
+					padding: 0px 15px;
+				}
+				.clint-image-div2
+				{
+					position: relative;
+					background-color: #343148;
+					border: 0px !important;
+					height: 100%;
+				}
+				.clint-image-div2 .clint-image2
+				{
+					position: relative;
+					border: 0px !important;
+					background-color: white;
+					margin-top: -12%;
+					margin-bottom: 20px;
+				}
+				.clint-image-div2 h5
+				{
+					color: #F7CAC9;
+				}
+				.clint-image-div2 p
+				{
+					width: 100%;
+					padding-left: 20px;
+					padding-right: 20px;
+					color: white;
+				}
+				
+				
+				#tenth-content
+				{
+					padding: 90px 25px;
+				}
+					#tenth-content h6
+				{
+					color: #797979;
+				}
+				#tenth-content h1
+				{
+					margin-bottom: 50px;
+					font-weight: bold;
+				}
+				#tenth-content .row .col-lg-3
+				{
+				
+					padding: 0px 15px;
+					
+				}
+				#tenth-content .trainer-div
+				{
+					padding: 15px;
+					margin-bottom: 30px;
+				}
+				#tenth-content .trainer-div .trainer-div-image
+				{
+					position: relative;
+					margin-bottom: 20px;
+				}
+				.trainer
+				{
+					opacity: 1;
+					tranisition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					transition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div:hover .trainer
+				{
+					opacity: 0.5;
+				}
+				#tenth-content .trainer-div:hover .image-links
+				{
+					opacity: 1;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links a
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					padding: 6px 10px;
+					margin-left: auto;
+					margin-right: auto;
+					border-radius: 40px;
+				}
+				
+				#eleventh-content
+				{
+					padding: 0px 25px 90px 25px;
+				}
+				#eleventh-content h6
+				{
+					color: #797979;
+				}
+				#eleventh-content h1
+				{
+					font-weight: bold;
+					margin-bottom: 40px;
+					font-size: 30px;
+				}
+				#eleventh-content .row .col-lg-4
+				{
+				
+					padding: 0px 15px;
+				}
+				.blog-div
+				{
+					text-align: left;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div div p
+				{
+					font-size: 13px;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link
+				{
+					color: #343148;
+					text-decoration: none;
+					font-weight: bold;
+					display: flex;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link:hover 
+				{
+					color: #F7CAC9;
+					transition: 0.3s ease;
+					text-decoration: none;
+				}
+				
+				.footer
+				{
+			
+					padding: 0px;
+					height: 450px;
+					
+				}
+				.footer-div
+				{
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 450px;
+					background-color: #343148;
+				}
+				.footer-div .footer-image
+				{
+					height: 450px;
+					opacity: 0.1;
+					
+				}
+				.footer-div .footer-text
+				{
+					position: absolute;
+					color: white;
+					top: 12%;
+					opacity: 1;
+					align-items: center !important;
+					width: 100%;
+					height: auto ;
+					
+					padding: 0px 40px;
+				}
+				.footer-div .footer-text h1
+				{
+					margin-bottom: 40px;
+				}
+				.footer-div .footer-text h1 a
+				{
+					font-size: 60px !important;
+					font-weight: bold;
+					color: #F7CAC9;
+				}
+				.footer-div .footer-text h1 a:hover
+				{
+					text-decoration: none;
+				}
+				.footer-div .footer-text h5
+				{
+					margin-bottom: 15px;
+				}
+				.footer-div .footer-text .footer-links
+				{
+					margin-bottom: 60px;
+				}
+				.footer-div .footer-text .footer-links a
+				{
+					color: white;
+					margin-left: 15px;
+					transition: 0.5s;
+				}
+				.footer-div .footer-text .footer-copyright-text
+				{
+					display: flex;
+					border-top: 1px solid grey;
+					padding: 30px 0px 0px 0px;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-4
+				{
+					padding: 0px !important;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p
+				{
+					color: white;
+					
+					margin: 0px;
+					text-align: center; 
+					width: 100%;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a
+				{
+					color: white;
+					transition: 0.5s;
+					font-weight: bold;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a:hover
+				{
+					text-decoration: none;
+					color: #F7CAC9 !important;
+				}
+				.footer-div .footer-text .footer-links a:hover
+				{
+					color: #F7CAC9;
+				}
+			}
+			
+			@media only screen and (min-width: 768px)
+			{
+				#third-content
+				{
+					background-color: #F7CAC9;
+					padding: 80px 0px;
+				}
+				#yoga-girl-content-col1
+				{
+					padding: 60px 10px;
+				}
+				#yoga-girl-content-col1 .yoga-girl-first-parg
+				{
+					font-size: 40px;
+					line-height: 50px;
+				}
+				#yoga-girl-content-col1 .yoga-girl-another-content
+				{
+					margin-bottom: 40px;
+				}
+				#yoga-girl-content-col1 #yoga-girl-link
+				{
+					padding: 15px 30px;
+				}
+				
+				#fourth-content
+				{
+					padding: 90px 20px 90px 20px;
+				}
+				#fourth-content .fourth-content-col1
+				{
+					padding-top: 80px;
+				}
+				#fourth-content .fourth-content-col1 .about-yoga-image
+				{
+					width: auto;
+					height: 300px;
+					margin-left: auto;
+				}
+				#fourth-content .wel-yooga
+				{
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				#fourth-content .fourth-content-second-par
+				{
+					margin-bottom: 40px;
+				}
+				#fourth-content .fourth-content-col2 #yoga-girl-link
+				{
+					padding: 15px 20px;
+				}
+				
+				#fifth-content #fifth-content-row
+				{
+					padding: 30px 20px;
+				}
+				#fifth-content .fifth-content-under-div h5
+				{
+					margin-bottom: 20px;
+				}
+				#fifth-content .fifth-content-under-div
+				{
+					padding: 20px 30px;
+				}
+				
+				#sixth-content
+				{
+					padding: 60px;
+					padding-bottom: 60px;
+					padding-left: 30px;
+					padding-right: 30px;
+				}
+				#sixth-content h1
+				{
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				#sixth-content .sixth-content-classes-link
+				{
+					display: flex;
+					justify-content: center;
+				}
+				#sixth-content .sixth-content-classes-link .page-link
+				{
+					margin: 5px;
+					border: 1px solid #343148;
+					color: #797979;
+				}
+				#sixth-content .sixth-content-classes-link .page-link:visited
+				{
+					color: #F7CAC9;
+					background-color: #343148;
+				}
+				#sixth-content .sixth-content-classes-link .page-link:hover
+				{
+					color: #F7CAC9;
+					background-color: #343148;
+				}
+				#sixth-content #classes-schedule
+				{
+					padding: 20px 0px;
+				}
+				#sixth-content #classes-schedule .inner-div
+				{
+					width: 70%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.class-teacher
+				{
+					position: relative;
+					margin-top: -20px;
+					margin-right: auto;
+					margin-bottom: 20px;
+					margin-left: auto;
+					width: 80%;
+					box-shadow: 0 0 10px #343148;
+					background-color: white;
+					display: flex;
+					align-items: center;
+					border-radius: 40px;
+				}
+				.class-teacher img
+				{
+					background-color: #F7CAC9; 
+					width: 30px;
+				}
+				.class-teacher h3
+				{
+					font-size: 13px;
+					font-weight: 600;
+					margin:0px;
+					width: calc(100% - 60px);
+				}
+				.class-teacher a
+				{
+					background-color: #F7CAC9;
+					width: 30px;
+					height: 30px;
+					border-radius: 40px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: #343148;
+					font-size: 25px;
+					padding: 0 0 5px 0;
+					transition: .3s;
+				}
+				.class-teacher a:hover
+				{
+					text-decoration: none;
+					background-color: #343148;
+					color: #F7CAC9;
+				}
+				.inner-div h5 
+				{
+					margin-left: auto;
+					margin-right: auto;
+					width: 80%;
+					text-align: left;
+				}
+				.inner-div p
+				{
+					margin-left: auto;
+					margin-right: auto;
+					width: 80%;
+					text-align: left;
+					font-size: 14px;
+				}
+				
+				#seventh-content
+				{
+					padding: 0px;
+				}
+				#seventh-content .back-image 
+				{
+					background-color: #F7CAC9;
+					padding: 90px 0px;
+				}	
+				#seventh-content .back-iamge .back-image-content
+				{
+				}
+				#seventh-content .back-image .back-image-content h6
+				{
+					font-size: 20px;
+					font-weight: bold;
+				}
+				#seventh-content .back-image .back-image-content h1
+				{
+					font-size: 40px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+				
+				#seventh-content .back-image .back-image-content #span
+				{
+					color: red;
+					font-size: 50px;
+				}
+				#seventh-content .back-image .back-image-content p
+				{
+					font-size: 15px;
+					line-height: 30px;
+					margin-bottom: 40px;
+				}
+				#seventh-content .back-image #yoga-girl-link:hover
+				{
+					background-color: white;
+					color: #343148;
+					text-decoration: none;
+				}
+				
+				#eighth-content
+				{
+					padding: 90px 7px !important;
+				}
+				#eighth-content h6
+				{
+					color: #797979;
+				}
+				#eighth-content h1
+				{
+					margin-bottom: 40px;
+				}
+				#eighth-content .row .col-md-4 .card .card-header #card-header-span
+				{
+					font-weight: bold;
+					font-size: 40px;
+					color: #343148;
+				}
+				#eighth-content .row .col-md-4 .card .card-header
+				{
+					background-color: #F7CAC9;
+					padding-top: 30px;
+					margin-bottom: 20px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer
+				{
+					background-color: white; 
+					border: none;
+					padding: 30px 0px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link
+				{
+					background-color: #F7CAC9;
+					color: #343148;
+					padding: 10px 20px;
+					margin-bottom: 10px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link:hover
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					text-decoration: none;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer .popularlink:hover
+				{
+					background-color: #F7CAC9 !important;
+					color: #343148 !important;
+					text-decoration: none !important;
+				}
+				#popular
+				{
+					position: absolute;
+					margin-top: -30px;
+					background-color: #F7CAC9;
+					color: #343148;
+					padding: 3px 10px;
+					margin-left: 15%;
+				}
+				
+				#ninth-content
+				{
+					padding:0px 30px;
+				}
+				#ninth-content h6
+				{
+					color: #797979;
+				}
+				#ninth-content h1
+				{
+					margin-bottom: 100px;
+					font-weight: bold;
+				}
+				#ninth-content .row .col-md-4
+				{
+					padding: 0px 15px;
+				}
+				.clint-image-div 
+				{
+					position: relative;
+				}
+				.clint-image-div .clint-image
+				{
+					position: relative;
+					margin-top: -30%;
+					margin-bottom: 20px;
+					background-color: white;
+				}
+				.clint-image-div2
+				{
+					position: relative;
+					background-color: #343148;
+					border: 0px !important;
+					height: 100%;
+				}
+				.clint-image-div2 .clint-image2
+				{
+					position: relative;
+					margin-top: -30% !important;
+					border: 0px !important;
+				}
+				.clint-image-div2 h5
+				{
+					color: #F7CAC9;
+				}
+				.clint-image-div2 p
+				{
+					color: white;
+				}
+				
+				#tenth-content
+				{
+					padding: 90px 30px;
+				}
+					#tenth-content h6
+				{
+					color: #797979;
+				}
+				#tenth-content h1
+				{
+					margin-bottom: 50px;
+					font-weight: bold;
+				}
+				#tenth-content .row .col-lg-3
+				{
+				
+					padding: 0px 15px;
+					
+				}
+				#tenth-content .trainer-div
+				{
+					padding: 15px;
+					margin-bottom: 30px;
+				}
+				#tenth-content .trainer-div .trainer-div-image
+				{
+					position: relative;
+					margin-bottom: 20px;
+				}
+				.trainer
+				{
+					opacity: 1;
+					tranisition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					transition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div:hover .trainer
+				{
+					opacity: 0.5;
+				}
+				#tenth-content .trainer-div:hover .image-links
+				{
+					opacity: 1;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links a
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					padding: 6px 10px;
+					margin-left: auto;
+					margin-right: auto;
+					border-radius: 40px;
+				}
+				
+				#eleventh-content
+				{
+					padding: 0px 30px 90px 30px;
+				}
+				#eleventh-content h6
+				{
+					color: #797979;
+				}
+				#eleventh-content h1
+				{
+					font-weight: bold;
+					margin-bottom: 40px;
+				}
+				#eleventh-content .row .col-lg-4
+				{
+				
+					padding: 0px 15px;
+				}
+				.blog-div
+				{
+					width: 100%;
+					text-align: left;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div div p
+				{
+					font-size: 13px;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link
+				{
+					color: #343148;
+					text-decoration: none;
+					font-weight: bold;
+					display: flex;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link:hover 
+				{
+					color: #F7CAC9;
+					transition: 0.3s ease;
+					text-decoration: none;
+				}
+				
+				.footer
+				{
+			
+					padding: 0px;
+					height: 450px;
+					
+				}
+				.footer-div
+				{
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 450px;
+					background-color: #343148;
+				}
+				.footer-div .footer-image
+				{
+					height: 450px;
+					opacity: 0.1;
+					
+				}
+				.footer-div .footer-text
+				{
+					position: absolute;
+					color: white;
+					top: 19%;
+					opacity: 1;
+					align-items: center !important;
+					width: 100%;
+					height: auto ;
+					
+					padding: 0px 40px;
+				}
+				.footer-div .footer-text h1
+				{
+					margin-bottom: 40px;
+				}
+				.footer-div .footer-text h1 a
+				{
+					font-size: 60px !important;
+					font-weight: bold;
+					color: #F7CAC9;
+				}
+				.footer-div .footer-text h1 a:hover
+				{
+					text-decoration: none;
+				}
+				.footer-div .footer-text h5
+				{
+					margin-bottom: 15px;
+				}
+				.footer-div .footer-text .footer-links
+				{
+					margin-bottom: 60px;
+				}
+				.footer-div .footer-text .footer-links a
+				{
+					color: white;
+					margin-left: 15px;
+					transition: 0.5s;
+				}
+				.footer-div .footer-text .footer-copyright-text
+				{
+					display: flex;
+					border-top: 1px solid grey;
+					padding: 30px 0px;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-4
+				{
+					padding: 0px !important;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p
+				{
+					color: white;
+					margin: 0px;
+				}
+				#footer-col1
+				{
+					text-align: left;
+				}
+				#footer-col2
+				{
+					text-align: right;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a
+				{
+					color: white;
+					transition: 0.5s;
+					font-weight: bold;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a:hover
+				{
+					text-decoration: none;
+					color: #F7CAC9 !important;
+				}
+				.footer-div .footer-text .footer-links a:hover
+				{
+					color: #F7CAC9;
+				}
+			}
+			
+			@media only screen and (min-width: 992px)
+			{
+				.top-bar
+				{
+					padding-left: 70px;
+					padding-right: 70px;
+					width: 100%;
+					margin: 0px !important;
+				}
+				.navbar
+				{
+					padding: 0px 70px !important;
+				}
+				#navbar .navbar-nav
+				{
+					margin-left: auto;
+				}
+				#third-content
+				{
+					padding-top: 10px;
+					padding-bottom: 90px;
+					background-color: #F7CAC9;
+				}
+				#yoga-girl-content-col1
+				{
+					padding: 0px 0px 0px 60px;
+					line-height: 70px;
+				}
+				#yoga-girl-content-col1 .yoga-girl-first-parg
+				{
+					font-size: 60px;
+					line-height: 70px;
+				}
+				#yoga-girl-content-col1 .yoga-girl-another-content
+				{
+					font-size: 20px;
+					margin-bottom: 20px;
+					line-height: 30px;
+				}
+				#yoga-girl-link
+				{
+					padding: 15px 20px;
+				}
+				#yoga-girl-content-col2 .yoga-img
+				{
+					padding-top: 10px;
+					height: 400px;
+				}
+				
+				#fourth-content
+				{
+					padding: 90px 10px 90px 10px;
+				}
+				#fourth-content .fourth-content-col1
+				{
+					padding-top: 10px;
+				}
+				#fourth-content .fourth-content-col1 .about-yoga-image
+				{
+					width: 100%;
+					height: 330px;
+				}
+				#fourth-content .wel-yooga
+				{
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				#fourth-content .fourth-content-second-par
+				{
+					margin-bottom: 40px;
+				}
+				
+				#fifth-content #fifth-content-row
+				{
+					padding-top: 30px;
+					padding-bottom: 30px;
+					padding-left: auto !important;
+					padding-right: auto !important;
+				}
+				#fifth-content #fifth-content-heading
+				{
+					font-weight: bold;
+				}
+				#fifth-content .fifth-content-under-div
+				{
+					padding: 20px 30px;
+					width: auto;
+				
+				}
+				#fifth-content .fifth-content-under-div h5
+				{
+					margin-bottom: 20px;
+				}
+				
+				#sixth-content
+				{
+					padding: 60px 20px;
+				}
+				#sixth-content h1
+				{
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				#sixth-content #classes-schedule
+				{
+					padding: 20px;
+				}
+				#sixth-content .sixth-content-classes-link .page-link
+				{
+					border: 1px solid #343148;
+					display: inline-block;
+					color: #797979;
+					margin: 3px;
+				}
+				#sixth-content .sixth-content-classes-link .page-link:visited
+				{
+					color: #F7CAC9;
+					background-color: #343148; 
+				}
+				#sixth-content .sixth-content-classes-link .page-link:hover
+				{
+					color: #F7CAC9;
+					background-color: #343148; 
+				}
+				#sixth-content .row .col-md-6
+				{
+					padding: 5px!important;
+				}
+				#sixth-content #classes-schedule
+				{
+					padding: 20px 20px;
+				}
+				#sixth-content #classes-schedule .inner-div
+				{
+					width: auto;
+				}
+				.class-teacher
+				{
+					position: relative;
+					margin-top: -20px;
+					margin-right: auto;
+					margin-bottom: 20px;
+					margin-left: auto;
+					width: 80%;
+					box-shadow: 0 0 10px #343148;
+					background-color: white;
+					display: flex;
+					align-items: center;
+					border-radius: 40px;
+				}
+				.class-teacher img
+				{
+					background-color: #F7CAC9; 
+					width: 30px;
+				}
+				.class-teacher h3
+				{
+					font-size: 13px;
+					font-weight: 600;
+					margin:0px;
+					width: calc(100% - 60px);
+				}
+				.class-teacher a
+				{
+					background-color: #F7CAC9;
+					width: 30px;
+					height: 30px;
+					border-radius: 40px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: #343148;
+					font-size: 25px;
+					padding: 0 0 5px 0;
+					transition: .3s;
+				}
+				.class-teacher a:hover
+				{
+					text-decoration: none;
+					background-color: #343148;
+					color: #F7CAC9;
+				}
+				.inner-div h5 
+				{
+					margin-left: auto;
+					margin-right: auto;
+					width: 80%;
+					text-align: left;
+				}
+				.inner-div p
+				{
+					margin-left: auto;
+					margin-right: auto;
+					width: 80%;
+					text-align: left;
+					font-size: 14px;
+				}
+				
+				#seventh-content
+				{
+					padding: 0px;
+				}
+				#seventh-content .back-image 
+				{
+					background-color: #F7CAC9;
+					padding: 90px;
+				}	
+				#seventh-content .back-iamge .back-image-content
+				{
+				}
+				#seventh-content .back-image .back-image-content h6
+				{
+					font-size: 15px;
+					font-weight: bold;
+				}
+				#seventh-content .back-image .back-image-content h1
+				{
+					font-size: 40px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+				
+				#seventh-content .back-image .back-image-content #span
+				{
+					color: red;
+					font-size: 50px;
+				}
+				#seventh-content .back-image .back-image-content p
+				{
+					font-size: 15px;
+					line-height: 30px;
+					margin-bottom: 40px;
+				}
+				#seventh-content .back-image #yoga-girl-link:hover
+				{
+					background-color: white;
+					color: #343148;
+					text-decoration: none;
+				}
+				
+				#eighth-content
+				{
+					padding: 90px 5px !important;
+				}
+				#eighth-content h6
+				{
+					color: #797979;
+				}
+				#eighth-content h1
+				{
+					margin-bottom: 40px;
+				}
+				#eighth-content .row .col-md-4
+				{
+					padding: 0px 15px;
+				}
+				#eighth-content .row .col-md-4 .card .card-header #card-header-span
+				{
+					font-weight: bold;
+					font-size: 40px;
+					color: #343148;
+				}
+				#eighth-content .row .col-md-4 .card .card-header
+				{
+					background-color: #F7CAC9;
+					padding-top: 30px;
+					margin-bottom: 20px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer
+				{
+					background-color: white; 
+					border: none;
+					padding: 30px 0px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link
+				{
+					background-color: #F7CAC9;
+					color: #343148;
+					padding: 10px 20px;
+					margin-bottom: 10px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link:hover
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					text-decoration: none;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer .popularlink:hover
+				{
+					background-color: #F7CAC9 !important;
+					color: #343148 !important;
+					text-decoration: none !important;
+				}
+				#popular
+				{
+					position: absolute;
+					margin-top: -30px;
+					background-color: #F7CAC9;
+					color: #343148;
+					padding: 3px 10px;
+					margin-left: 24.5%;
+				}
+				
+				#ninth-content
+				{
+					padding:0px 20px;
+				}
+				#ninth-content h6
+				{
+					color: #797979;
+				}
+				#ninth-content h1
+				{
+					margin-bottom: 120px;
+					font-weight: bold;
+				}
+				#ninth-content .row .col-md-4
+				{
+					padding: 0px 15px;
+				}
+				.clint-image-div 
+				{
+					position: relative;
+				}
+				.clint-image-div .clint-image
+				{
+					position: relative;
+					margin-top: -20%;
+					margin-bottom: 20px;
+					background-color: white;
+				}
+				.clint-image-div2
+				{
+					position: relative;
+					background-color: #343148;
+					border: 0px !important;
+				}
+				.clint-image-div2 .clint-image2
+				{
+					position: relative;
+					border: 0px;
+					margin-top: -20% !important;
+				}
+				.clint-image-div2 h5
+				{
+					color: #F7CAC9;
+				}
+				.clint-image-div2 p
+				{
+					color: white;
+					padding-left: 30px; 
+					padding-right: 30px; 
+				}
+				
+				#tenth-content
+				{
+					padding: 90px 20px;
+				}
+				#tenth-content h6
+				{
+					color: #797979;
+				}
+				#tenth-content h1
+				{
+					margin-bottom: 50px;
+					font-weight: bold;
+				}
+				#tenth-content .row .col-lg-3
+				{
+				
+					padding: 0px 15px;
+					
+				}
+				#tenth-content .trainer-div
+				{
+					padding: 15px;
+				}
+				#tenth-content .trainer-div .trainer-div-image
+				{
+					position: relative;
+					margin-bottom: 20px;
+				}
+				.trainer
+				{
+					opacity: 1;
+					tranisition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					transition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div:hover .trainer
+				{
+					opacity: 0.5;
+				}
+				#tenth-content .trainer-div:hover .image-links
+				{
+					opacity: 1;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links a
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					padding: 6px 10px;
+					margin-left: auto;
+					margin-right: auto;
+					border-radius: 40px;
+				}
+				
+				#eleventh-content
+				{
+					padding: 0px 20px 90px 20px;
+				}
+				#eleventh-content h6
+				{
+					color: #797979;
+				}
+				#eleventh-content h1
+				{
+					font-weight: bold;
+					margin-bottom: 40px;
+				}
+				#eleventh-content .row .col-lg-4
+				{
+				
+					padding: 0px 15px;
+				}
+				.blog-div
+				{
+					width: 100%;
+					text-align: left;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div div p
+				{
+					font-size: 15px;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link
+				{
+					color: #343148;
+					text-decoration: none;
+					font-weight: bold;
+					display: flex;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link:hover 
+				{
+					color: #F7CAC9;
+					transition: 0.3s ease;
+					text-decoration: none;
+				}
+				
+				.footer
+				{
+			
+					padding: 0px;
+					height: 450px;
+				
+				}
+				.footer-div
+				{
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 450px;
+					background-color: #343148;
+				}
+				.footer-div .footer-image
+				{
+					height: 450px;
+					opacity: 0.1;
+					
+				}
+				.footer-div .footer-text
+				{
+					position: absolute;
+					color: white;
+					top: 19%;
+					opacity: 1;
+					align-items: center !important;
+					width: 100%;
+					height: auto ;
+				
+					padding: 0px 40px;
+				}
+				.footer-div .footer-text h1
+				{
+					margin-bottom: 40px;
+				}
+				.footer-div .footer-text h1 a
+				{
+					font-size: 60px !important;
+					font-weight: bold;
+					color: #F7CAC9;
+				}
+				.footer-div .footer-text h1 a:hover
+				{
+					text-decoration: none;
+				}
+				.footer-div .footer-text h5
+				{
+					margin-bottom: 15px;
+				}
+				.footer-div .footer-text .footer-links
+				{
+					margin-bottom: 60px;
+				}
+				.footer-div .footer-text .footer-links a
+				{
+					color: white;
+					margin-left: 15px;
+					transition: 0.5s;
+				}
+				.footer-div .footer-text .footer-copyright-text
+				{
+					display: flex;
+					border-top: 1px solid grey;
+					padding: 30px 0px;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-4
+				{
+					padding: 0px !important;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p
+				{
+					color: white;
+				
+					margin: 0px;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a
+				{
+					color: white;
+					transition: 0.5s;
+					font-weight: bold;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a:hover
+				{
+					text-decoration: none;
+					color: #F7CAC9 !important;
+				}
+				.footer-div .footer-text .footer-links a:hover
+				{
+					color: #F7CAC9;
+				}
+			}
+			
+			@media only screen and (min-width: 1200px)
+			{
+				.navbar
+				{
+					padding: 0px 70px !important;
+				}
+				#navbar .navbar-nav
+				{
+					margin-left: auto;
+				}
+				#yoga-girl-content-col1
+				{
+					padding-left: 60px;
+					margin-top: 100px;
+				}
+				#yoga-girl-content-col1 .yoga-girl-first-parg
+				{
+					font-size: 60px;
+					line-height: 70px;
+				}
+				#yoga-girl-content-col1 .yoga-girl-another-content
+				{
+					font-size: 20px;
+				}
+				#yoga-girl-content-col2 .yoga-img
+				{
+					height: 450px;	
+				}
+				
+				#fourth-content
+				{
+					padding: 90px 30px 90px 30px;
+				}
+				#fourth-content .fourth-content-col1 .about-yoga-image
+				{
+					width: 100%;
+					height: 400px;
+				}
+				#fourth-content .wel-yooga
+				{
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				#fourth-content .fourth-content-second-par
+				{
+					margin-bottom: 40px;
+				}
+				#fourth-content .fourth-content-col2
+				{
+					padding: 20px 10px;
+				}
+				
+				#fifth-content #fifth-content-row
+				{
+					padding: 30px 30px;
+				}
+				.fifth-content-under-div
+				{
+					padding: 20px 30px;
+				}
+				.fifth-content-under-div h5
+				{
+					margin-bottom: 10px;
+				}
+				
+				#sixth-content h1
+				{
+					margin-bottom: 30px;
+					font-weight: bold;
+				}
+				#sixth-content #classes-schedule
+				{
+					padding: 20px 30px;
+				}
+				#sixth-content .sixth-content-classes-link .page-link
+				{
+					border: 1px solid black;
+					display: inline-block;
+					color: #797979;
+					margin: 3px;
+				}
+				#sixth-content .sixth-content-classes-link .page-link:visited 
+				{
+					color: #F7CAC9;
+					background-color: #343148;
+				}
+				#sixth-content .sixth-content-classes-link .page-link:hover
+				{
+					color: #F7CAC9;
+					background-color: #343148; 
+				}
+				
+				#seventh-content
+				{
+					padding: 0px;
+				}
+				#seventh-content .back-image 
+				{
+					background-color: #F7CAC9;
+					padding: 90px;
+				}	
+				#seventh-content .back-iamge .back-image-content
+				{
+				}
+				#seventh-content .back-image .back-image-content h6
+				{
+					font-size: 20px;
+					font-weight: bold;
+				}
+				#seventh-content .back-image .back-image-content h1
+				{
+					font-size: 50px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+				#seventh-content .back-image .back-image-content #span
+				{
+					color: red;
+					font-size: 70px;
+				}
+				#seventh-content .back-image .back-image-content h1 span
+				{
+					font-size: 80px;
+				}
+				#seventh-content .back-image .back-image-content p
+				{
+					font-size: 20px;
+					line-height: 30px;
+					margin-bottom: 40px;
+				}
+				#seventh-content .back-image #yoga-girl-link:hover
+				{
+					background-color: white;
+					color: #343148;
+					text-decoration: none;
+				}
+				
+				#eighth-content
+				{
+					padding: 90px 10px 60px 10px !important;
+				}
+				#eighth-content h6
+				{
+					color: #797979;
+				}
+				#eighth-content h1
+				{
+					margin-bottom: 40px;
+				}
+				#eighth-content .row .col-md-4 .card
+				{
+					position: relative;
+				}
+				#eighth-content .row .col-md-4 .card .card-header #card-header-span
+				{
+					font-weight: bold;
+					font-size: 40px;
+					color: #343148;
+				}
+				#eighth-content .row .col-md-4 .card .card-header
+				{
+					background-color: #F7CAC9;
+					padding-top: 30px;
+					margin-bottom: 20px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer
+				{
+					background-color: white; 
+					border: none;
+					padding: 30px 0px;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link
+				{
+					background-color: #F7CAC9;
+					color: #343148;
+					padding: 10px 20px;
+					margin-bottom: 10px;
+				}	
+				#eighth-content .row .col-md-4 .card .card-footer #card-body-link:hover
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					text-decoration: none;
+				}
+				#eighth-content .row .col-md-4 .card .card-footer .popularlink:hover
+				{
+					background-color: #F7CAC9 !important;
+					color: #343148 !important;
+					text-decoration: none !important;
+				}
+				#popular
+				{
+					position: absolute;
+					margin-top: -30px;
+					background-color: #F7CAC9;
+					color: #343148;
+					padding: 3px 10px;
+					margin-left: 28.8%;
+				}
+				
+				#ninth-content
+				{
+					padding:0px 35px;
+				}
+				#ninth-content h6
+				{
+					color: #797979;
+				}
+				#ninth-content h1
+				{
+					margin-bottom: 130px;
+					font-weight: bold;
+				}
+				#ninth-content .row .col-md-4
+				{
+					padding: 0px 15px;
+				}
+				.clint-image-div 
+				{
+					position: relative;
+				}
+				.clint-image-div .clint-image
+				{
+					position: relative;
+					margin-top: -20%;
+					margin-bottom: 20px;
+					background-color: white;
+				}
+				.clint-image-div2
+				{
+					position: relative;
+					background-color: #343148;
+					border: 0px !important;
+					height: 100%;
+				}
+				.clint-image-div2 .clint-image2
+				{
+					position: relative;
+					border: 0px;
+				}
+				.clint-image-div2 h5
+				{
+					color: #F7CAC9;
+				}
+				.clint-image-div2 p
+				{
+					color: white;
+				}
+				
+				#tenth-content
+				{
+					padding: 90px 30px;
+				}
+					#tenth-content h6
+				{
+					color: #797979;
+				}
+				#tenth-content h1
+				{
+					margin-bottom: 50px;
+					font-weight: bold;
+				}
+				#tenth-content .row .col-lg-3
+				{
+				
+					padding: 0px 15px;
+					
+				}
+				#tenth-content .trainer-div
+				{
+					padding: 15px;
+				}
+				#tenth-content .trainer-div .trainer-div-image
+				{
+					position: relative;
+					margin-bottom: 20px;
+				}
+				.trainer
+				{
+					opacity: 1;
+					tranisition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					transition: opacity 0.5s ease-in-out;
+				}
+				#tenth-content .trainer-div:hover .trainer
+				{
+					opacity: 0.5;
+				}
+				#tenth-content .trainer-div:hover .image-links
+				{
+					opacity: 1;
+				}
+				#tenth-content .trainer-div .trainer-div-image .image-links a
+				{
+					background-color: #343148;
+					color: #F7CAC9;
+					padding: 6px 10px;
+					margin-left: auto;
+					margin-right: auto;
+					border-radius: 40px;
+				}
+				
+				#eleventh-content
+				{
+					padding: 0px 30px 90px 30px;
+				}
+				#eleventh-content h6
+				{
+					color: #797979;
+				}
+				#eleventh-content h1
+				{
+					font-weight: bold;
+					margin-bottom: 40px;
+				}
+				.blog-div
+				{
+					text-align: left;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div div p
+				{
+					font-size: 15px;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link
+				{
+					color: #343148;
+					text-decoration: none;
+					font-weight: bold;
+					display: flex;
+				}
+				#eleventh-content .row .col-lg-4 .blog-div .blog-div-link:hover 
+				{
+					color: #F7CAC9;
+					transition: 0.3s ease;
+					text-decoration: none;
+				}
+				
+				.footer
+				{
+			
+					padding: 0px;
+					height: 450px;
+					
+				}
+				.footer-div
+				{
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 450px;
+					background-color: #343148;
+				}
+				.footer-div .footer-image
+				{
+					height: 450px;
+					opacity: 0.1;
+					
+				}
+				.footer-div .footer-text
+				{
+					position: absolute;
+					color: white;
+					top: 19%;
+					opacity: 1;
+					align-items: center !important;
+					width: 100%;
+					height: auto ;
+					
+					padding: 0px 40px;
+				}
+				.footer-div .footer-text h1
+				{
+					margin-bottom: 40px;
+				}
+				.footer-div .footer-text h1 a
+				{
+					font-size: 60px !important;
+					font-weight: bold;
+					color: #F7CAC9;
+				}
+				.footer-div .footer-text h1 a:hover
+				{
+					text-decoration: none;
+				}
+				.footer-div .footer-text h5
+				{
+					margin-bottom: 15px;
+				}
+				.footer-div .footer-text .footer-links
+				{
+					margin-bottom: 60px;
+				}
+				.footer-div .footer-text .footer-links a
+				{
+					color: white;
+					margin-left: 15px;
+					transition: 0.5s;
+				}
+				.footer-div .footer-text .footer-copyright-text
+				{
+					display: flex;
+					border-top: 1px solid grey;
+					padding: 30px 0px;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-4
+				{
+					padding: 0px !important;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p
+				{
+					color: white;
+					
+					margin: 0px;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a
+				{
+					color: white;
+					transition: 0.5s;
+					font-weight: bold;
+				}
+				.footer-div .footer-text .footer-copyright-text .col-md-6 p a:hover
+				{
+					text-decoration: none;
+					color: #F7CAC9 !important;
+				}
+				.footer-div .footer-text .footer-links a:hover
+				{
+					color: #F7CAC9;
+				}
+			}
+			
+			.fixed-bottom
+			{
+				margin-left: auto;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				background-color: #F7CAC9;
+				padding: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 40px;
+				height: auto;
+				border-radius: 5px;
+			}
+			.fixed-bottom a 
+			{
+				color: #343148 !important;
+			}
+			
+		</style>
+	</head>
+	<body id="pet-template">
+		<div class="container-fluid d-none d-md-block top-bar">
+			<div class="row">
+				<div class="col-sm-8">
+					<ul class="nav"> 
+						<li class="nav-item mr-3 border-left border-secondary pt-1">&nbsp;
+							<i class="far fa-clock text-white mr-1"> </i><span class="text-white"> 8:00 - 9:00 Mon - Fri</span>
+						</li>
+						<li class="nav-item mr-auto pt-1 border-right border-left border-secondary">&nbsp;
+							<i class="fas fa-phone text-white mr-1"></i><span class="text-white">+123 456 7890 For Appointment &nbsp;</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 d-flex justify-content-end">
+					<ul class="nav">
+						<li class="nav-item border-right border-left border-secondary">
+							<a href="#" ><i class="fab fa-twitter text-white nav-link px-2"></i></a>
+						</li>
+						<li class="nav-item border-right border-secondary">
+							<a href="#"><i class="fab fa-facebook text-white nav-link px-2"></i></a>
+						</li>
+						<li class="nav-item border-right border-secondary">
+							<a href="#"><i class="fab fa-linkedin-in text-white nav-link px-2"></i></a>
+						</li>
+						<li class="nav-item border-right border-secondary">
+							<a href	="#"><i class="fab fa-instagram text-white nav-link px-2"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #343148;">
+			
+				<a href="#" class="navbar-brand p-0" style="font-size: 40px; letter-spacing:3px; font-weight: bold;">YooGA</a>
+			
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+					<i class="fas fa-bars"></i>
+				</button>
+			
+				<div class="navbar-collapse" id="navbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link active">HOME</a>
+						</li>
+						<li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">SERVICE</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">PRICE</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">CLASS</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">TRAINER</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">POSE</a></li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#navbar">BLOG</a>
+						
+							<ul class="dropdown-menu">
+								<li class="dropdown-item">BLOG GRID</li>
+								<li class="dropdown-item">BLOG DETAILS</li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+					</ul>
+				</div>
+			
+		</nav>
+		
+		<!--Third CONTENT-->	
+		<div class="container-fluid">
+			<div class="row" id="third-content">
+				<div class="col-md-6" id="yoga-girl-content-col1">
+					<h1 class="yoga-girl-first-parg"><strong>Yoga Practice For Good Health</strong></h1>
+					<p class="yoga-girl-another-content" style="color: #343148;">Lorem ipsum dolor sit amet elit. Phasell nec pretum mi. Curabi ornare velit non. 
+					Aliqua metus tortor auctor quis sem.</p>
+					
+					<a href="#" id="yoga-girl-link" class="mr-2">Join Now</a>
+					<a href="#" id="yoga-girl-link">Contact Us</a>
+					
+				</div>
+				<div class="col-md-6 p-0 d-none d-md-block" id="yoga-girl-content-col2">
+					<img src="yoga-girl.png" alt="yoga-girl-image" width="auto" height="350px" class="float-right yoga-img">
+				</div>
+			</div>
+		</div>
+	
+		<!--Fourth Content-->
+		<div class="container-fluid">
+		
+			<div class="row" id="fourth-content">
+				<div class="col-lg-5 col-md-6 fourth-content-col1">
+					<img src="about-yoga-image.png" alt="about-image" class="about-yoga-image">
+				</div>
+				<div class="col-lg-7 col-md-6 fourth-content-col2">
+					
+					<h6 style="color: #797979;">Learn About Us</h6>
+					<h1 class="wel-yooga">Welcome to Yooga</h1>
+					<p class="fourth-content-first-par">	
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec 
+						pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor,
+						auctor id gravida condimentum, viverra quis sem.
+					</p>
+					<p class="fourth-content-second-par">	
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
+						Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
+						condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.
+					</p>
+					
+					<a href="#" id="yoga-girl-link">Learn More</a>
+				</div>
+			</div>
+		</div>
+	
+		<!--Fifth Content-->
+		<div class="container-fluid text-center" id="fifth-content">
+			<h6 style="color: #797979;">What We Do</h6>
+			<h1 id="fifth-content-heading">Yoga For Health</h1>
+			
+			<div class="row" id="fifth-content-row">
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="fifth-content-under-div border">
+						<h5>Heal emotions</h5>
+						<p>
+							Lorem ipsum dolor sit amet. Phasellus nec pretium mi.
+							Curabitur facilisis ornare velit non
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="fifth-content-under-div border" style="background-color: #343148;">
+						<h5 style="color: #F7CAC9;">Body Refreshes</h5>
+						<p class="text-white">
+							Lorem ipsum dolor sit amet. Phasellus nec pretium mi.
+							Curabitur facilisis ornare velit non
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="fifth-content-under-div border">
+						<h5>Mind & Serenity</h5>
+						<p>
+							Lorem ipsum dolor sit amet. Phasellus nec pretium mi.
+							Curabitur facilisis ornare velit non
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="fifth-content-under-div border">
+						<h5>Enjoy your life</h5>
+						<p>
+							Lorem ipsum dolor sit amet. Phasellus nec pretium mi.
+							Curabitur facilisis ornare velit non
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="fifth-content-under-div border" style="background-color: #343148;">
+						<h5 style="color: #F7CAC9;">Body & Spirituality</h5>
+						<p class="text-white">
+							Lorem ipsum dolor sit amet. Phasellus nec pretium mi.
+							Curabitur facilisis ornare velit non
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="fifth-content-under-div border">
+						<h5>Body & Mind</h5>
+						<p>
+							Lorem ipsum dolor sit amet. Phasellus nec pretium mi.
+							Curabitur facilisis ornare velit non
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--Sixth content-->
+		<div class="container-fluid text-center" id="sixth-content">
+			<h6 style="color: #797979;">Our Classes</h6>
+			<h1>Yoga Class Schedule</h1>
+			
+			<div class="sixth-content-classes-link">
+				<a href="allclasses.htm" class="page-link active" target="classes">All Classes</a>
+				<a href="pilatesyoga.htm" class="page-link" target="classes">Pilates Yoga</a>
+				<a href="hathayoga.htm" class="page-link" target="classes">Hatha Yoga</a>
+				<a href="vinyasayoga.htm" class="page-link" target="classes">Vinyasa Yoga</a>
+			</div>
+			
+			<div class="row" id="classes-schedule">
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="inner-div border" style="position: relative; z-index: 1;">
+						<img src="allclasses-image1.jpg" alt="All Classes Image first" width="100%">
+						<div class="class-teacher">
+							<img src="class-teacher1.png" alt="class-teacher-first" class="rounded-circle" width="40px">
+							<h3>&nbsp;&nbsp; Elise Moran</h3>
+							<a href="#" class="stretched-link">+</a>
+						</div>
+						<h5 style="color: #343148;">Pilates Yoga</h5>
+						<p style="color: #797979;"><i class="far fa-calendar-alt"></i> Sun, Tue, Thu <i class="far fa-clock"> </i> 9:00 - 10:00</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="inner-div border">
+						<img src="allclasses-image2.jpg" alt="All Classes Image second" width="100%">
+						<div class="class-teacher">
+							<img src="class-teacher2.png" alt="class-teacher-second" class="rounded-circle" width="40px">
+							<h3>&nbsp;&nbsp; Kate Glover</h3>
+							<a href="#">+</a>
+						</div>
+						<h5 style="color: #343148;">lyengar Yoga</h5>
+						<p style="color: #797979;"><i class="far fa-calendar-alt"></i> Sun, Tue, Thu <i class="far fa-clock"> </i> 9:00 - 10:00</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="inner-div border">
+						<img src="allclasses-image3.jpg" alt="All Classes Image third" width="100%">
+						<div class="class-teacher">
+							<img src="class-teacher3.png" alt="class-teacher-third" class="rounded-circle" width="40px">
+							<h3>&nbsp;&nbsp; Elina Ekman</h3>
+							<a href="#">+</a>
+						</div>
+						<h5 style="color: #343148;">Ashtanga Yoga</h5>
+						<p style="color: #797979;"><i class="far fa-calendar-alt"></i> Sun, Tue, Thu <i class="far fa-clock"> </i> 9:00 - 10:00</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="inner-div border">
+						<img src="allclasses-image4.jpg" alt="All Classes Image fourth" width="100%">
+						<div class="class-teacher">
+							<img src="class-teacher4.png" alt="class-teacher-fourth" class="rounded-circle" width="40px">
+							<h3>&nbsp;&nbsp; Lilly Fry</h3>
+							<a href="#">+</a>
+						</div>
+						<h5 style="color: #343148;">Hatha Yoga</h5>
+						<p style="color: #797979;"><i class="far fa-calendar-alt"></i> Sun, Tue, Thu <i class="far fa-clock"> </i> 9:00 - 10:00</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="inner-div border">
+						<img src="allclasses-image5.jpg" alt="All Classes Image fifth" width="100%">
+						<div class="class-teacher">
+							<img src="class-teacher5.png" alt="class-teacher-fifth" class="rounded-circle" width="40px">
+							<h3>&nbsp;&nbsp; Olivia Yates</h3>
+							<a href="#">+</a>
+						</div>
+						<h5 style="color: #343148;">Kundalini Yoga</h5>
+						<p style="color: #797979;"><i class="far fa-calendar-alt"></i> Sun, Tue, Thu <i class="far fa-clock"> </i> 9:00 - 10:00</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 p-2">
+					<div class="inner-div border">
+						<img src="allclasses-image6.jpg" alt="All Classes Image sixth" width="100%">
+						<div class="class-teacher">
+							<img src="class-teacher6.png" alt="class-teacher-sixth" class="rounded-circle" width="40px">
+							<h3>&nbsp;&nbsp; Millie Harper</h3>
+							<a href="#">+</a>
+						</div>
+						<h5 style="color: #343148;">Vinyasa Yoga</h5>
+						<p style="color: #797979;"><i class="far fa-calendar-alt"></i> Sun, Tue, Thu <i class="far fa-clock"> </i> 9:00 - 10:00</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Seventh Content-->
+		<div class="container-fluid border text-center" id="seventh-content">
+			<div class="back-image">
+				<div class="back-image-content">
+					<h6>Awesome Discount</h6>
+					<h1>Get <span id="span">30%</span> Discount for all Classes</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+					<a href="#" id="yoga-girl-link">Join Now</a>
+				</div>
+			</div>
+		</div>
+	
+		<!--Eighth content-->
+		<div class="container text-center" id="eighth-content">
+			<h6>Yoga Package</h6>
+			<h1>Yoga Pricing Plan</h1>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-header">
+							<h4><strong>BASIC</strong></h4>
+							<p>	
+								<span id="card-header-span"><sup style="font-size: 20px; font-weight: 200;">$</sup>49</span><span>/mo</span>
+							</p>
+						</div>
+						<div class="card-body d-flex-column p-0">
+							<p class=" border-bottom m-0 p-2 w-100">Personal Trainer</p>
+							<p class=" border-bottom m-0 p-2 w-100">Special Class</p>
+							<p class=" border-bottom m-0 p-2 w-100">Free Tutorials</p>
+							<p class="m-0 p-2 w-100">Group Training</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" id="card-body-link">Join Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-header" style="background-color: #343148; color: #F7CAC9;">
+							<span id="popular">Popular</span>
+							<h4><strong>STANDARD</strong></h4>
+							<p style=" color: #F7CAC9;" >	
+								<span id="card-header-span" style=" color: #F7CAC9;" ><sup style="font-size: 20px; font-weight: 200;">$</sup>99</span><span>/mo</span>
+							</p>
+						</div>
+						<div class="card-body d-flex-column p-0">
+							<p class=" border-bottom m-0 p-2 w-100">Personal Trainer</p>
+							<p class=" border-bottom m-0 p-2 w-100">Special Class</p>
+							<p class=" border-bottom m-0 p-2 w-100">Free Tutorials</p>
+							<p class="m-0 p-2 w-100">Group Training</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="popularlink" id="card-body-link" style="background-color: #343148; color:#F7CAC9;">Join Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card" style="border-radius: 0px !important;">
+						<div class="card-header">
+							<h4><strong>PREMIUM</strong></h4>
+							<p>	
+								<span id="card-header-span"><sup style="font-size: 20px; font-weight: 200;">$</sup>149</span><span>/mo</span>
+							</p>
+						</div>
+						<div class="card-body d-flex-column p-0">
+							<p class=" border-bottom m-0 p-2 w-100">Personal Trainer</p>
+							<p class=" border-bottom m-0 p-2 w-100">Special Class</p>
+							<p class=" border-bottom m-0 p-2 w-100">Free Tutorials</p>
+							<p class="m-0 p-2 w-100">Group Training</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" id="card-body-link">Join Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--Ninth Content-->
+		<div class="container-fluid text-center" id="ninth-content">
+			<h6>Testimonial</h6>
+			<h1>Our Clint Say!</h1>
+			
+			<div class="row">
+				<div class="col-md-4 d-none d-md-block">
+					<div class="clint-image-div border">
+						<img src="clint1.jpg" alt="clint1-image" class="clint-image border p-3 rounded-circle" width="120px">
+					
+							<p>Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum.</p>
+							<h5>Customer Name</h5>
+							<p>Profession</p>
+					
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="clint-image-div clint-image-div2 border">
+						<img src="clint2.jpg" alt="clint2-image" class="clint-image clint-image2 border p-3 rounded-circle" width="120px">
+					
+							<p>Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum.</p>
+							<h5>Customer Name</h5>
+							<p>Profession</p>
+					
+					</div>
+				</div>
+				<div class="col-md-4 d-none d-md-block">
+					<div class="clint-image-div border">
+						<img src="clint3.jpg" alt="clint3-image" class="clint-image border p-3 rounded-circle" width="120px">
+					
+							<p>Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum.</p>
+							<h5>Customer Name</h5>
+							<p>Profession</p>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--tenth content-->
+		<div class="container-fluid text-center" id="tenth-content">
+			<h6>Yoga Trainer</h6>
+			<h1>Expert Yoga Trainer</h1>
+			
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="trainer-div border">
+						<div class="trainer-div-image">
+							<img src="trainer-1.jpg" alt="trainer1-image" width="100%" class="trainer">
+							<div class="image-links d-flex justify-content-center">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+						<h5>Millie Harper</h5>
+						<p>Yoga Teacher</p>
+					</div> 
+				</div> 
+				<div class="col-lg-3 col-md-6">
+					<div class="trainer-div border">
+						<div class="trainer-div-image">
+							<img src="trainer-2.jpg" alt="trainer1-image" width="100%" class="trainer">
+							<div class="image-links d-flex justify-content-center">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+						<h5>Millie Harper</h5>
+						<p>Yoga Teacher</p>
+					</div>
+				</div> 
+				<div class="col-lg-3 col-md-6">
+					<div class="trainer-div border">
+						<div class="trainer-div-image">
+							<img src="trainer-3.jpg" alt="trainer1-image" width="100%" class="trainer">
+							<div class="image-links d-flex justify-content-center">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+						<h5>Millie Harper</h5>
+						<p>Yoga Teacher</p>
+					</div>
+				</div> 
+				<div class="col-lg-3 col-md-6">
+					<div class="trainer-div border">
+						<div class="trainer-div-image">
+							<img src="trainer-4.jpg" alt="trainer1-image" width="100%" class="trainer">
+							<div class="image-links d-flex justify-content-center">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+						<h5>Millie Harper</h5>
+						<p>Yoga Teacher</p>
+					</div>
+				</div> 
+			</div>
+		</div>
+	
+		<!--Eleventh content-->
+		<div class="container-fluid text-center" id="eleventh-content">
+			<h6>From Blog</h6>
+			<h1>Latest Yoga Articles</h1>
+			
+			<div class="row">
+				<div class="d-block col-md-6 col-lg-4 ">
+					<img src="blog-1.jpg" alt="blog-image-1" width="100%"> 
+					<div class="blog-div border p-4">
+						<h4>Lorem ipsum dolor</h4>
+						<div class="d-flex justify-content-center p-0 m-0">
+							
+								<p><i class="far fa-list-alt"></i> Body Fitness</p>
+							
+								<p><i class="far fa-calendar-alt"></i> 01-Jan-2045</p>
+							
+								<p><i class="far fa-comments"></i> 5</p>
+							
+						</div>
+						
+						<p class="w-100">Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor</p>
+						
+						<a href="#" class="blog-div-link">READ MORE &nbsp;<i class="fa fa-angle-right d-flex align-items-center"></i></a>
+					</div>
+				</div>
+				<div class="d-none d-md-block col-md-6 col-lg-4 ">
+					<img src="blog-2.jpg" alt="blog-image-2" width="100%">
+					<div class="blog-div border p-4">
+						<h4>Lorem ipsum dolor</h4>
+						<div class="d-flex justify-content-center p-0 m-0">
+							
+								<p><i class="far fa-list-alt"></i> Body Fitness</p>
+							
+								<p><i class="far fa-calendar-alt"></i> 01-Jan-2045</p>
+							
+								<p><i class="far fa-comments"></i> 5</p>
+							
+						</div>
+						
+						<p class="w-100">Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor</p>
+						
+						<a href="#" class="blog-div-link">READ MORE &nbsp;<i class="fa fa-angle-right d-flex align-items-center"></i></a>
+					</div>
+				</div>
+				<div class="d-none d-lg-block col-lg-4">
+					<img src="blog-3.jpg" alt="blog-image-3" width="100%">
+					<div class="blog-div border p-4">
+						<h4>Lorem ipsum dolor</h4>
+						<div class="d-flex justify-content-center p-0 m-0">
+							
+								<p><i class="far fa-list-alt"></i> Body Fitness</p>
+							
+								<p><i class="far fa-calendar-alt"></i> 01-Jan-2045</p>
+							
+								<p><i class="far fa-comments"></i> 5</p>
+							
+						</div>
+						
+						<p class="w-100">Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor</p>
+						
+						<a href="#" class="blog-div-link">READ MORE &nbsp;<i class="fa fa-angle-right d-flex align-items-center"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--Footer-->
+		<div class="container-fluid text-center footer">
+			<div class="footer-div">
+				<img src="footer-bg.png" alt="footer-background-image" width="auto" height="500px" class="footer-image">
+				<div class="footer-text">
+					<h1><a href="pet_template.htm">Y<span class="text-white">oo</span>GA</a></h1>
+					<h5>123 Street, New York, USA</h5>
+					<h5>+012 345 67890 <span class="border border-white border-right"> </span> &nbsp;info@domain.com</h5>
+					
+					<div class="footer-links">
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+					
+					<div class="footer-copyright-text row">
+							<div class="col-md-6" >
+								<p id="footer-col1">&copy; <a href="#">YooGA,</a> All Rights Reserved.</p>
+							</div>
+							<div class="col-md-6 d-flex justify-content-end">
+								<p id="footer-col2">Designed By <a href="#">POGO</a></p>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="fixed-bottom">
+			<a href="#pet-template" class="stretched-link"><i class="fas fa-chevron-up"></i></a>
+		</div>
+	</body>
+</html>
